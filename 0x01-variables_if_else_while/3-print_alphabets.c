@@ -10,12 +10,12 @@ int main(void)
 char ch = 'a';
 char CH = 'A';
 
-for (ch = 'a'; ch <= 'z'; ch++) //Write lowercase characters
+for (ch = 'a'; ch <= 'z'; ch++) /*Write lowercase characters */
 {
 putchar(ch);
 }
 
-for (CH = 'A'; CH <= 'Z'; CH++) // write uppercase characters
+for (CH = 'A'; CH <= 'Z'; CH++) /* write uppercase characters */
 {
 putchar(CH);
 }
