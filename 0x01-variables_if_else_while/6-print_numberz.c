@@ -7,9 +7,9 @@
 
 int main(void)
 {
-char ch = '0';
+int ch = '0';
 
-// Write the Character to stdout
+/* Write the Character to stdout */
 for (ch = '0'; ch <= '9'; ch++)
 {
 putchar(ch);
