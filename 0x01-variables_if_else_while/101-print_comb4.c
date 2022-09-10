@@ -21,7 +21,7 @@ putchar(ch);
 putchar(CH);
 putchar(AB);
 
-if ((ch != '7' || CH != '8' ||AB != '9'))
+if ((ch != '7' || CH != '8' || AB != '9'))
 {
 putchar(',');
 putchar(' ');
