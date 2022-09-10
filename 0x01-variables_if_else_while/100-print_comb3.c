@@ -8,7 +8,6 @@
 
 int main(void)
 {
-    
 int ch;
 int CH;
 for (ch = '0'; ch <= '9'; ch++)
