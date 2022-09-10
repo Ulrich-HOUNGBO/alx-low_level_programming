@@ -12,12 +12,12 @@ char CH = 'A';
 
 for (ch = 'a'; ch <= 'z'; ch++) //Write lowercase characters
 {
-    putchar(ch);
+putchar(ch);
 }
 
 for (CH = 'A'; CH <= 'Z'; CH++) // write uppercase characters
 {
-    putchar(CH);
+putchar(CH);
 }
 putchar('\n');
 return (0);

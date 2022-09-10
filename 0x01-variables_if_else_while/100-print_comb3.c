@@ -20,10 +20,10 @@ putchar(CH);
 
 if ((ch != '8' || CH != '9'))
 {
-    putchar(',');
-    putchar(' ');
+putchar(',');
+putchar(' ');
 }
-    
+
 }
 }
 putchar('\n');
