@@ -1,5 +1,5 @@
-int _putchar(char c);
+#ifndef HOLBERTON_H_INCLUDED
+#define HOLBERTON_H_INCLUDED
 
-/**
- * print_alphabet - print lowercase alphabet
- */
+int _putchar(char);
+
