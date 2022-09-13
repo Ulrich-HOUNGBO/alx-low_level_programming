@@ -6,5 +6,5 @@
  */
 int _putchar(char c)
 {
-return (puts(_putchar));
+return (puts("_putchar"));
 }
