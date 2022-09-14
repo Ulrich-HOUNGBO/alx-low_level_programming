@@ -1,25 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - print sum of multiples of 3 or 5 below 1024
+ * main - print first 50 Fibonacci numbers
  * Return: 0
  */
 
 int main(void)
 {
-int n;
-int sum;
+int counter;
+int countto = 50;
+long a = 1;
+long b = 2;
 
-sum = 0;
+for (counter = 1; counter <= (countto / 2); counter++)
+{
+printf("%li %li ", a, b);
+a += b;
+b += a;
+}
+if (countto % 2 == 1)
+printf("%li", a);
 
-for (n = 0; n < 1024; n++)
-{
-if ((n % 3 == 0) || (n % 5 == 0))
-{
-sum += n;
-}
-}
-printf("%d\n", sum);
+printf("\n");
 
 return (0);
 }
