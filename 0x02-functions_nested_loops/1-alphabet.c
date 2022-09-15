@@ -3,13 +3,14 @@
  * print_alphabet - prints lowercase alphabet
  * Return: 0
  */
-
-void print_alphabet(void)
+int _isupper(int c)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
+if (c >= 'A' && c <= 'Z')
 {
-_putchar(ch);
+return (1);
 }
-_putchar('\n');
+else
+{
+return (0);
+}
 }
