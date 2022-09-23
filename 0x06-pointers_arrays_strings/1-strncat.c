@@ -1,26 +1,28 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _strncpy - copies n bytes of a source into buffer of a destination string,
- * @dest: copy source to this buffer
- * @src: this is the source to copy
- * @n: n bytes to be copied
- * Return: copied string
+ * _strncat - concatenate n bytes to destination string
+ * @dest: string to be appended to
+ * @src: string to append
+ * @n: append n number of bytes(chars)
+ * Return: concatenated string
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-int i;
-
-for (i = 0; i < n && src[i] != '\0'; i++)
+int i = 0;
+int j = 0;
+while (dest[i] != '\0')
 {
-dest[i] = src[i];
-}
-
-while (i < n)
-{
-dest[i] = '\0';
 i++;
 }
+
+while (dest[j] != src[n])
+{
+dest[i] = src[j];
+i++;
+j++;
+}
+dest[i] = '\0';
 return (dest);
 }
