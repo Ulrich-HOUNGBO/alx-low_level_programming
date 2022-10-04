@@ -20,9 +20,10 @@ if (arr == NULL)
 {
 return (NULL);
 }
-while (i < (int)size, i++)
+while (i < (int)size)
 {
 *(arr + i) = c;
+i++;
 }
 return (arr);
 }
