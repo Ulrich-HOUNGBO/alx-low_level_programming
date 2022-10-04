@@ -24,13 +24,11 @@ s2 = "";
 }
 while (*(s1 + i))
 {
-i++;
-len1++;
+len1++, i++;
 }
 while (*(s2 + j))
 {
-j++;
-len2++;
+len2++, j++;
 }
 len2++;
 concat = malloc(sizeof(char) * (len1 + len2));
@@ -38,7 +36,7 @@ if (concat == NULL)
 {
 return (NULL);
 }
-i= 0, j= 0;
+i = 0, j = 0;
 while (i < len1)
 {
 *(concat + i) = *(s1 + i);
@@ -47,7 +45,7 @@ i++;
 while (i < len1)
 {
 *(concat + j) = *(s2 + j);
-j++;
+i++, j++;
 }
 return (concat);
 }
