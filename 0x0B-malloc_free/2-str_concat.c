@@ -41,11 +41,11 @@ return (NULL);
 i= 0, j= 0;
 while (i < len1)
 {
-*(concat + i) = *(len1 + i);
+*(concat + i) = *(s1 + i);
 }
 while (i < len1)
 {
-*(concat + j) = *(len2 + j);
+*(concat + j) = *(s2 + j);
 }
-return (concat)
+return (concat);
 }
