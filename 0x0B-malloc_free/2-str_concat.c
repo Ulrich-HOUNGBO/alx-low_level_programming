@@ -44,7 +44,7 @@ i++;
 }
 while (i < len1)
 {
-*(concat + j) = *(s2 + j);
+*(concat + i) = *(s2 + j);
 i++, j++;
 }
 return (concat);
