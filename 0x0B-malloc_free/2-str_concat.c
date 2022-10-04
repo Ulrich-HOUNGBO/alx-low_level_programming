@@ -22,7 +22,7 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-while (*(s1 + 1))
+while (*(s1 + i))
 {
 i++;
 len1++;
@@ -42,10 +42,12 @@ i= 0, j= 0;
 while (i < len1)
 {
 *(concat + i) = *(s1 + i);
+i++;
 }
 while (i < len1)
 {
 *(concat + j) = *(s2 + j);
+j++;
 }
 return (concat);
 }
