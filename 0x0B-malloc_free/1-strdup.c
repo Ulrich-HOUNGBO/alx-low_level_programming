@@ -27,6 +27,7 @@ if (cpy_char == NULL)
 {
 return (NULL);
 }
+i = 0;
 while (i < len)
 {
 *(cpy_char + i) = *(str + i);
