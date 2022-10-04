@@ -16,7 +16,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-while(*(str + 1))
+while(*(str + i))
 {
 i++;
 len++;
@@ -29,7 +29,7 @@ return (NULL);
 }
 while (i < len)
 {
-*(cpy_char + 1) = *(str + 1);
+*(cpy_char + i) = *(str + i);
 i++;
 }
 return (cpy_char);
