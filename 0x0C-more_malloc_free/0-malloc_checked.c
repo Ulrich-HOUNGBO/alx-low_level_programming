@@ -1,5 +1,6 @@
-#include "main.h"
 #include <stdlib.h>
+#include "holberton.h"
+
 /**
  * malloc_checked - allocates memory using malloc
  * @b: size to malloc
@@ -8,13 +9,12 @@
 
 void *malloc_checked(unsigned int b)
 {
-void *ptr; 
+void *ptr;
 
 ptr = malloc(b);
 
 if (ptr == NULL)
-{
-exit(98)
-}
+exit(98);
+
 return (ptr);
 }
