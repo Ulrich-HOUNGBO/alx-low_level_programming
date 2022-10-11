@@ -13,13 +13,13 @@ if (d == NULL)
 {
 return;
 }
-if (d -> name)
+if (d ->name)
 {
-free(d -> name);
+free(d ->name);
 }
-if (d -> owner)
+if (d ->owner)
 {
-free(d -> owner);
+free(d ->owner);
 }
 free(d);
 }
