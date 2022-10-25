@@ -8,11 +8,11 @@
 
 ize_t print_listint(const listint_t *h)
 {
-sinze_t num_node = 0;
+size_t num_node = 0;
 
 while ( h != NULL)
 {
-printf("%d \n", h -> n);
+printf("%d\n", h -> n);
 num_node += 1   
 h = h -> next;
 }
