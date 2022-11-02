@@ -14,7 +14,7 @@ ssize_t n_read, n_wrote;
 char *buffer;
 if (filename == NULL)
 {
-return (NULL);
+return (0);
 }
 fd = open(filename, O_RDONLY);
 if (fd == -1)
@@ -27,14 +27,14 @@ if (buffer == NULL)
 {
 return (0);
 }
-n_read = read(fd, letters, buffer);
+n_read = read(fd, buffer, letters);
 if (n_read == -1)
 {
 free(buffer);
 close(fd);
 return (0);
 }
-n_wrote == write(STDOUT_FILENO, fd, n_read);
+n_wrote == write(STDOUT_FILENO, buffer, n_read);
 if (n_wrote == -1)
 {
 free(buffer);
