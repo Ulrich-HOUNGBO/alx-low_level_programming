@@ -1,7 +1,3 @@
-//
-// Created by uhoun on 12/04/2023.
-//
-
 #ifndef SEARCH_ALGOS_H
 #define SEARCH_ALGOS_H
 
